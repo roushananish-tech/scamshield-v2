@@ -1,0 +1,71 @@
+:root {
+  --bg: #ffffff;
+  --text: #16181d;
+  --muted: #444b57;
+  --border: #6b7280;
+  --accent: #0b4fb3;
+  --accent-text: #ffffff;
+  --low-bg: #e3f4e8;   --low-text: #0b3d1a;
+  --sus-bg: #fff1c9;   --sus-text: #4d3300;
+  --scam-bg: #fde3e3;  --scam-text: #6b0f0f;
+  --mark: #ffe58a;
+  --focus: #b34700;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #101216; --text: #eef0f4; --muted: #b6bcc8; --border: #8b93a1;
+    --accent: #7db2ff; --accent-text: #08121f;
+    --low-bg: #12301b; --low-text: #cdeed6;
+    --sus-bg: #3a2c05; --sus-text: #ffe9b0;
+    --scam-bg: #3d1212; --scam-text: #ffd6d6;
+    --mark: #6b5600; --focus: #ffb26b;
+  }
+}
+* { box-sizing: border-box; }
+html { font-size: 112.5%; }
+body { margin: 0; background: var(--bg); color: var(--text); font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; line-height: 1.55; }
+main, .site-header, .site-footer { max-width: 46rem; margin: 0 auto; padding: 1rem; }
+h1 { margin: 0 0 .25rem; font-size: 2rem; }
+h2 { font-size: 1.3rem; margin: 1.5rem 0 .5rem; }
+h3 { font-size: 1.05rem; margin: 1rem 0 .25rem; }
+.tagline, .hint, .site-footer { color: var(--muted); }
+.hint { margin: 0 0 .4rem; font-size: .9rem; }
+.skip { position: absolute; left: -999px; top: 0; background: var(--accent); color: var(--accent-text); padding: .5rem 1rem; z-index: 10; }
+.skip:focus { left: 0; }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.privacy { border: 2px solid var(--border); border-radius: .5rem; padding: .6rem .9rem; }
+fieldset { border: 0; padding: 0; margin: 1rem 0; }
+legend { font-weight: 700; padding: 0; margin-bottom: .3rem; }
+.choice { display: inline-flex; align-items: center; gap: .4rem; margin-right: 1.2rem; min-height: 2.75rem; }
+.choice input { width: 1.25rem; height: 1.25rem; }
+.field { margin: 1rem 0; flex: 1 1 14rem; }
+.row { display: flex; gap: 1rem; flex-wrap: wrap; }
+label { display: block; font-weight: 700; margin-bottom: .25rem; }
+label.choice { font-weight: 400; display: inline-flex; }
+textarea, select { width: 100%; font: inherit; color: var(--text); background: var(--bg); border: 2px solid var(--border); border-radius: .5rem; padding: .6rem; }
+textarea { resize: vertical; }
+button { font: inherit; min-height: 2.75rem; padding: .5rem 1.1rem; border-radius: .5rem; border: 2px solid var(--border); background: var(--bg); color: var(--text); cursor: pointer; }
+button.primary { background: var(--accent); color: var(--accent-text); border-color: var(--accent); font-weight: 700; }
+.actions { display: flex; gap: .75rem; flex-wrap: wrap; }
+:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+.inline-list { list-style: none; padding: 0; margin: 0; display: flex; gap: .5rem; flex-wrap: wrap; }
+#results { margin-top: 1.5rem; }
+#results:focus { outline: none; }
+.verdict { border-radius: .6rem; padding: .9rem 1rem; margin: .5rem 0 1rem; border: 3px solid currentColor; }
+.verdict[data-level="low"] { background: var(--low-bg); color: var(--low-text); }
+.verdict[data-level="suspicious"] { background: var(--sus-bg); color: var(--sus-text); }
+.verdict[data-level="scam"] { background: var(--scam-bg); color: var(--scam-text); }
+.verdict .label { font-size: 1.35rem; font-weight: 800; margin: 0; }
+.verdict .score { margin: .25rem 0 .5rem; }
+progress { width: 100%; height: 1rem; }
+.message-view { white-space: pre-wrap; overflow-wrap: anywhere; border: 2px solid var(--border); border-radius: .5rem; padding: .75rem; margin: .25rem 0 1rem; }
+mark { background: var(--mark); color: inherit; text-decoration: underline; text-decoration-thickness: 2px; padding: 0 .1rem; border-radius: .2rem; }
+mark sup { font-weight: 800; margin-left: .1rem; }
+ol.reasons, ul.advice, ol.timeline, ul.links, ol.messages { padding-left: 1.4rem; }
+ol.reasons li, ol.timeline li, ol.messages li { margin-bottom: .75rem; }
+.reason-why, .meta { margin: .1rem 0; color: var(--muted); }
+.card { border: 2px solid var(--border); border-radius: .6rem; padding: .75rem 1rem; margin: 1rem 0; }
+.badge { display: inline-block; border: 2px solid currentColor; border-radius: 1rem; padding: 0 .55rem; font-size: .85rem; font-weight: 700; }
+.site-footer { font-size: .9rem; border-top: 1px solid var(--border); margin-top: 2rem; }
+@media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; scroll-behavior: auto !important; } }
+@media (max-width: 30rem) { html { font-size: 106%; } }

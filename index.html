@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'none'; form-action 'none'; base-uri 'none'">
+  <meta name="description" content="ScamShield checks suspicious SMS and WhatsApp messages in your browser, explains why, and tells you what to do. Nothing is uploaded.">
+  <title>ScamShield: check a suspicious message</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="site.css">
+  <script type="module" src="src/app.js"></script>
+  <script type="module" src="src/site.js"></script>
+</head>
+<body>
+  <a class="skip" href="#input">Skip to the message box</a>
+
+  <header class="site-header hero">
+    <div class="hero__inner">
+      <div class="hero__copy">
+        <p class="eyebrow">Free. Private. Made for India.</p>
+        <h1>Strange call or message? <span class="grad">Know what to do next.</span></h1>
+        <p class="tagline">Paste a suspicious SMS, WhatsApp message or link. Find out why it looks risky and what to do next. It runs in your browser. Nothing you type is sent or saved.</p>
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="#input">Check a message</a>
+          <a class="btn btn--danger" href="tel:1930">Call 1930 if money is gone</a>
+        </div>
+      </div>
+      <img class="hero__img" src="web/public/img/hero-960.webp" srcset="web/public/img/hero-560.webp 560w, web/public/img/hero-960.webp 960w" sizes="(min-width: 900px) 480px, 90vw" width="960" height="960" alt="ScamShield illustration of a phone protected by a shield">
+    </div>
+  </header>
+
+  <aside class="help" aria-label="Get help now">
+    <div class="help__row">
+      <p>Money already sent? Call <a href="tel:1930">1930</a></p>
+      <p>Report fraud at cybercrime.gov.in</p>
+      <p>Report scam numbers at sancharsaathi.gov.in</p>
+    </div>
+  </aside>
+
+  <main id="main">
+    <h2 id="check-h">Check a suspicious message</h2>
+    <p class="privacy" role="note"><strong>Private by design.</strong> Everything is checked inside this page. Your message is never uploaded, stored or sent anywhere, and links are never opened.</p>
+
+    <form id="check-form" novalidate>
+      <fieldset class="modes">
+        <legend>What are you checking?</legend>
+        <label class="choice"><input type="radio" name="mode" value="single" checked> One message or link</label>
+        <label class="choice"><input type="radio" name="mode" value="thread"> A whole conversation</label>
+      </fieldset>
+
+      <div class="field">
+        <label for="input">Paste the message</label>
+        <p id="input-hint" class="hint">For a conversation, paste the chat (WhatsApp "Export chat" text works). Maximum 20,000 characters.</p>
+        <textarea id="input" name="input" rows="8" maxlength="20000" aria-describedby="input-hint" autocomplete="off" spellcheck="false"></textarea>
+      </div>
+
+      <div class="row">
+        <div class="field">
+          <label for="sender">Do you know who sent it?</label>
+          <select id="sender" name="sender">
+            <option value="unsure">Not sure</option>
+            <option value="unknown">No, unknown sender</option>
+            <option value="known">Yes, it appears to be someone I know</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="acted">Have you already done anything?</label>
+          <select id="acted" name="acted">
+            <option value="none">No, I only received it</option>
+            <option value="clicked">I opened the link</option>
+            <option value="replied">I replied to them</option>
+            <option value="shared">I shared an OTP, PIN or password</option>
+            <option value="installed">I installed an app they sent</option>
+            <option value="paid">I sent money</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="actions">
+        <button type="submit" class="primary">Check it</button>
+        <button type="button" id="clear">Clear</button>
+      </div>
+    </form>
+
+    <section aria-labelledby="examples-h" class="examples">
+      <h2 id="examples-h">Not sure? Try an example</h2>
+      <ul id="example-list" class="inline-list"></ul>
+    </section>
+
+    <p id="status" class="sr-only" role="status"></p>
+    <section id="results" tabindex="-1" aria-label="Result" hidden></section>
+  </main>
+
+  <section class="section" aria-labelledby="proof-h">
+    <div class="wrap">
+      <p class="kicker">Tested, with limits</p>
+      <h2 class="title" id="proof-h">Built to explain, not just to score</h2>
+      <ul class="stats">
+        <li><strong>106</strong><span>test messages written in real scam styles</span></li>
+        <li><strong>100%</strong><span>of test scams flagged as suspicious or scam</span></li>
+        <li><strong>0</strong><span>genuine test messages flagged</span></li>
+        <li><strong>0</strong><span>words you type sent anywhere</span></li>
+      </ul>
+      <p class="fine">A small test set we wrote ourselves. A good sign, not a guarantee. On new wording fewer scams reach the top scam verdict. The evaluation table in the README shows every set, including the weak ones. New tricks can still get past it.</p>
+    </div>
+  </section>
+
+  <section class="section section--tint" aria-labelledby="how-h">
+    <div class="wrap">
+      <p class="kicker">How it works</p>
+      <h2 class="title" id="how-h">Three steps, no technical words</h2>
+      <ol class="how">
+        <li>
+          <img src="web/public/img/step-hero-480.webp" width="480" height="480" alt="" loading="lazy" decoding="async">
+          <div><span class="num" aria-hidden="true">1</span><h3>Tell it what is happening</h3><p>A message, a chat, or money already gone. Paste it in. No sign-up, no app.</p></div>
+        </li>
+        <li>
+          <img src="web/public/img/step-call-480.webp" width="480" height="480" alt="" loading="lazy" decoding="async">
+          <div><span class="num" aria-hidden="true">2</span><h3>It looks for the tricks</h3><p>Fake links, OTP requests, threats, secrecy and pressure. Checked on your own device.</p></div>
+        </li>
+        <li>
+          <img src="web/public/img/step-family-480.webp" width="480" height="480" alt="" loading="lazy" decoding="async">
+          <div><span class="num" aria-hidden="true">3</span><h3>Get the next steps</h3><p>Plain steps in the right order, with the 1930 helpline one tap away.</p></div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="tricks-h">
+    <div class="wrap">
+      <p class="kicker">Going around now</p>
+      <h2 class="title" id="tricks-h">Tricks scammers use on calls</h2>
+      <p class="lead">Tap a panel to see what they say and what to do. Each one is a scam.</p>
+      <ul class="acc">
+        <li class="acc__item is-open">
+          <img class="acc__img" src="web/public/img/scam-digital-720.webp" width="720" height="956" alt="A phone showing a video call from a faceless uniformed figure, with a red warning ring and a handcuff icon" loading="lazy" decoding="async">
+          <span class="acc__shade" aria-hidden="true"></span>
+          <button type="button" class="acc__btn" id="acc-btn-1" aria-expanded="true" aria-controls="acc-1"><span class="acc__num" aria-hidden="true">01</span><span class="acc__label">Digital arrest</span></button>
+          <div id="acc-1" class="acc__body" role="region" aria-labelledby="acc-btn-1">
+            <p>Fake police, CBI or customs, often on a video call, demanding money.</p>
+            <p><strong>They will say:</strong> Do not hang up and do not tell anyone.</p>
+            <p><strong>Do this now:</strong> Hang up. No police officer, CBI, ED, customs officer or judge arrests anyone over a video call.</p>
+            <a class="acc__go" href="tel:1930">Call 1930</a>
+          </div>
+        </li>
+        <li class="acc__item">
+          <img class="acc__img" src="web/public/img/scam-phishing-720.webp" width="720" height="956" alt="A hook dangling over a phone chat bubble that holds a link" loading="lazy" decoding="async">
+          <span class="acc__shade" aria-hidden="true"></span>
+          <button type="button" class="acc__btn" id="acc-btn-2" aria-expanded="false" aria-controls="acc-2"><span class="acc__num" aria-hidden="true">02</span><span class="acc__label">Fake bank or card call</span></button>
+          <div id="acc-2" class="acc__body" role="region" aria-labelledby="acc-btn-2">
+            <p>A support agent who needs your OTP, PIN or card number.</p>
+            <p><strong>They will say:</strong> We are sending an OTP, please read it out to verify you.</p>
+            <p><strong>Do this now:</strong> Hang up. Banks never ask for an OTP, PIN or CVV. Call your bank on the number printed on your card.</p>
+            <a class="acc__go" href="tel:1930">Call 1930</a>
+          </div>
+        </li>
+        <li class="acc__item">
+          <img class="acc__img" src="web/public/img/scam-voice-720.webp" width="720" height="956" alt="A phone with two overlapping sound waves and a microphone, showing a copied voice" loading="lazy" decoding="async">
+          <span class="acc__shade" aria-hidden="true"></span>
+          <button type="button" class="acc__btn" id="acc-btn-3" aria-expanded="false" aria-controls="acc-3"><span class="acc__num" aria-hidden="true">03</span><span class="acc__label">Cloned voice</span></button>
+          <div id="acc-3" class="acc__body" role="region" aria-labelledby="acc-btn-3">
+            <p>A familiar voice in sudden trouble, asking for money fast.</p>
+            <p><strong>They will say:</strong> I am in an accident, hospital or police trouble. Do not tell anyone, just send the money now.</p>
+            <p><strong>Do this now:</strong> Do not send money on a voice call alone. Call that person back on the number saved in your phone, and ask for your family code word.</p>
+            <a class="acc__go" href="tel:1930">Call 1930</a>
+          </div>
+        </li>
+        <li class="acc__item">
+          <img class="acc__img" src="web/public/img/scam-remote-720.webp" width="720" height="956" alt="A laptop with a red cursor and an eye icon, showing a stranger watching the screen" loading="lazy" decoding="async">
+          <span class="acc__shade" aria-hidden="true"></span>
+          <button type="button" class="acc__btn" id="acc-btn-4" aria-expanded="false" aria-controls="acc-4"><span class="acc__num" aria-hidden="true">04</span><span class="acc__label">Screen share trap</span></button>
+          <div id="acc-4" class="acc__body" role="region" aria-labelledby="acc-btn-4">
+            <p>Asked to install an app or share your screen to fix something.</p>
+            <p><strong>They will say:</strong> Install this app so we can process your refund.</p>
+            <p><strong>Do this now:</strong> Stop sharing your screen and close the app. Switch on airplane mode and do not open your banking or UPI apps.</p>
+            <a class="acc__go" href="tel:1930">Call 1930</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section section--tint" aria-labelledby="tl-h">
+    <div class="wrap">
+      <p class="kicker">The script</p>
+      <h2 class="title" id="tl-h">How a scam unfolds</h2>
+      <p class="lead">Most scams follow the same five steps. Spot the stage you are in and stop before the last one. Paste a whole chat above and ScamShield finds these stages for you.</p>
+      <ol class="tl">
+        <li><span class="dot" aria-hidden="true">1</span><h3>Hook</h3><p>A lure: prize, job, parcel, refund or an urgent family story.</p></li>
+        <li><span class="dot" aria-hidden="true">2</span><h3>Fake authority</h3><p>Claims to be a bank, agency, utility or official.</p></li>
+        <li><span class="dot" aria-hidden="true">3</span><h3>Pressure</h3><p>Threats and deadlines to stop you thinking.</p></li>
+        <li><span class="dot" aria-hidden="true">4</span><h3>Isolation</h3><p>Tells you to keep it secret or stay on the line.</p></li>
+        <li><span class="dot" aria-hidden="true">5</span><h3>Extraction</h3><p>Asks for money, OTP or PIN, an app install or a call-back.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="rules-h">
+    <div class="wrap">
+      <p class="kicker">Keep your family safe</p>
+      <h2 class="title" id="rules-h">Four rules to remember</h2>
+      <ol class="rules">
+        <li><span class="big" aria-hidden="true">1</span><p>Police, CBI and customs never arrest anyone over a call or video. Hang up.</p></li>
+        <li><span class="big" aria-hidden="true">2</span><p>Never share an OTP, PIN or CVV with anyone, ever.</p></li>
+        <li><span class="big" aria-hidden="true">3</span><p>Never install an app or share your screen because a caller asked.</p></li>
+        <li><span class="big" aria-hidden="true">4</span><p>If someone you know asks for money, call them back on their saved number first.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section band" aria-labelledby="family-h">
+    <div class="wrap band__grid">
+      <div>
+        <p class="kicker">One habit that stops voice scams</p>
+        <h2 class="title" id="family-h">Set a family code word</h2>
+        <p class="lead">Pick a word that is not on social media and cannot be guessed from your photos. Tell it to close family in person or on a call, and never write it in a chat. If anyone asks for money in an emergency, ask for the code word first. No code word means no money.</p>
+      </div>
+      <img src="web/public/img/family-640.webp" srcset="web/public/img/family-640.webp 640w, web/public/img/family-1024.webp 1024w" sizes="(min-width: 900px) 420px, 90vw" width="640" height="430" alt="A family looking at a phone together" loading="lazy" decoding="async">
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="faq-h">
+    <div class="wrap">
+      <p class="kicker">Questions</p>
+      <h2 class="title" id="faq-h">Quick answers</h2>
+      <div class="faq">
+        <details><summary>Is ScamShield free?</summary><p>Yes. There is no sign-up, no app to install and no advertising.</p></details>
+        <details><summary>Does it send my message anywhere?</summary><p>No. The check runs inside your browser on your device. The page has a strict security policy that stops it from making network requests.</p></details>
+        <details><summary>Can it be wrong?</summary><p>Yes. It is a rule-based checker and new tricks can get past it. If a message asks for money, a code or an app, check with someone you trust first.</p></details>
+        <details><summary>I already paid. What should I do?</summary><p>Call 1930 as soon as you can and report the fraud at cybercrime.gov.in. Choose "I sent money" in the checker above for the steps in order.</p></details>
+        <details><summary>Who is it for?</summary><p>Anyone in India who gets suspicious calls or messages, and the families who look out for them.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="wrap">
+    <p>ScamShield uses transparent rules, not a black-box model. It can miss scams and can flag genuine messages. A low score does not prove a message is safe. If anything asks for money, codes or a login, check through the official app first.</p>
+    <p>Report suspected fraud messages at sancharsaathi.gov.in. If you have lost money, call <strong>1930</strong> or visit cybercrime.gov.in.</p>
+  </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,642 @@
+{
+  "about": "Synthetic, hand-written messages modelled on public scam advisories. Not real user data. 'dev' messages were used while tuning rule weights; 'holdout' messages were written before the first run and their weights were never tuned against.",
+  "messages": [
+    {
+      "id": "D-S01",
+      "set": "dev",
+      "label": "scam",
+      "text": "Dear customer, your SBI account will be blocked today. Update KYC now: http://sbi-kyc-update.com/login"
+    },
+    {
+      "id": "D-S02",
+      "set": "dev",
+      "label": "scam",
+      "text": "HDFC Bank: Your net banking will be suspended today. Click http://hdfc-secure-login.xyz to update PAN immediately."
+    },
+    {
+      "id": "D-S03",
+      "set": "dev",
+      "label": "scam",
+      "text": "Congratulations! You have won Rs 25,00,000 in KBC lucky draw. Call 9123456780 to claim your prize and pay the processing fee."
+    },
+    {
+      "id": "D-S04",
+      "set": "dev",
+      "label": "scam",
+      "text": "Part time job! Earn Rs 5000 per day working from home. Just like and subscribe to YouTube videos. WhatsApp 9988776655."
+    },
+    {
+      "id": "D-S05",
+      "set": "dev",
+      "label": "scam",
+      "text": "Your electricity bill is overdue. Power will be disconnected tonight. Call 8877665544 immediately."
+    },
+    {
+      "id": "D-S06",
+      "set": "dev",
+      "label": "scam",
+      "text": "Dear user, Rs 1,299 refund is pending. Share your OTP and card number to receive it."
+    },
+    {
+      "id": "D-S07",
+      "set": "dev",
+      "label": "scam",
+      "text": "This is CBI. Your Aadhaar is linked to money laundering. You are under digital arrest. Do not tell anyone and stay on the video call."
+    },
+    {
+      "id": "D-S08",
+      "set": "dev",
+      "label": "scam",
+      "text": "Hi Mum, I lost my phone, this is my new number. I am in an accident at the hospital, please send Rs 15000 urgently."
+    },
+    {
+      "id": "D-S09",
+      "set": "dev",
+      "label": "scam",
+      "text": "Your FASTag is blocked. Update KYC now at http://fastag-kyc.top/update to avoid penalty."
+    },
+    {
+      "id": "D-S10",
+      "set": "dev",
+      "label": "scam",
+      "text": "e-Challan issued for your vehicle. Pay fine now: http://echallan-parivahan.cc/pay or download app: mparivahan.apk"
+    },
+    {
+      "id": "D-S11",
+      "set": "dev",
+      "label": "scam",
+      "text": "Join our VIP group on Telegram for guaranteed returns. Double your money in 7 days, 100% profit."
+    },
+    {
+      "id": "D-S12",
+      "set": "dev",
+      "label": "scam",
+      "text": "Package could not be delivered. Address incomplete. Update your address: http://bit.ly/3xYz12 within 24 hours"
+    },
+    {
+      "id": "D-S13",
+      "set": "dev",
+      "label": "scam",
+      "text": "Aapka account band ho jayega. Abhi KYC update karo aur OTP bhejo."
+    },
+    {
+      "id": "D-S14",
+      "set": "dev",
+      "label": "scam",
+      "text": "Aapko inaam jeeta hai! Lottery lagi hai, paise bhejo registration fee ke liye."
+    },
+    {
+      "id": "D-S15",
+      "set": "dev",
+      "label": "scam",
+      "text": "आपका खाता बंद हो जाएगा। तुरंत ओटीपी शेयर करें।"
+    },
+    {
+      "id": "D-S16",
+      "set": "dev",
+      "label": "scam",
+      "text": "Sent you Rs 5000 by mistake on UPI. Please return it. Accept the collect request."
+    },
+    {
+      "id": "D-S17",
+      "set": "dev",
+      "label": "scam",
+      "text": "Your SIM will be blocked within 2 hours. SIM KYC pending. Call 9090909090."
+    },
+    {
+      "id": "D-S18",
+      "set": "dev",
+      "label": "scam",
+      "text": "Income Tax Department notice: refund of Rs 18,540 approved. Verify details at http://incometax-refund.online/claim"
+    },
+    {
+      "id": "D-S19",
+      "set": "dev",
+      "label": "scam",
+      "text": "Dear customer your credit card reward points will expire today. Install the app: rewards-sbi.apk to redeem."
+    },
+    {
+      "id": "D-S20",
+      "set": "dev",
+      "label": "scam",
+      "text": "Your SBI account will be blocked. Verify your account at http://sbiоnline-login.com",
+      "note": "contains a Cyrillic 'о' in the domain"
+    },
+    {
+      "id": "D-S21",
+      "set": "dev",
+      "label": "scam",
+      "text": "Last warning! Police case registered against you. Pay fine Rs 4000 to avoid arrest warrant. Do not inform your family."
+    },
+    {
+      "id": "D-S22",
+      "set": "dev",
+      "label": "scam",
+      "text": "You are selected for a work from home task job. Complete simple tasks, earn Rs 3000 daily income. Deposit Rs 1000 security deposit."
+    },
+    {
+      "id": "D-S23",
+      "set": "dev",
+      "label": "scam",
+      "text": "UPI: collect request of Rs 9,999 pending. Enter your UPI PIN to receive the money."
+    },
+    {
+      "id": "D-S24",
+      "set": "dev",
+      "label": "scam",
+      "text": "Dear customer, update your PAN card or your account will be frozen. Click http://income-tax-pan.icu"
+    },
+    {
+      "id": "D-L01",
+      "set": "dev",
+      "label": "legit",
+      "text": "Your OTP for HDFC Bank NetBanking is 482913. Do not share it with anyone. Valid for 10 minutes."
+    },
+    {
+      "id": "D-L02",
+      "set": "dev",
+      "label": "legit",
+      "text": "Rs 1,250.00 debited from A/c XX1234 on 21-Nov. Avl Bal Rs 15,430. If not you, call your bank on the number on your card."
+    },
+    {
+      "id": "D-L03",
+      "set": "dev",
+      "label": "legit",
+      "text": "Your Amazon order #405-1234567 has been shipped and will arrive Tuesday. Track at amazon.in/orders"
+    },
+    {
+      "id": "D-L04",
+      "set": "dev",
+      "label": "legit",
+      "text": "Hey are you free tonight? Dinner at 8?"
+    },
+    {
+      "id": "D-L05",
+      "set": "dev",
+      "label": "legit",
+      "text": "Meeting moved to 4pm. Please bring the quarterly report."
+    },
+    {
+      "id": "D-L06",
+      "set": "dev",
+      "label": "legit",
+      "text": "Your Zomato order is on the way. Delivery partner Ravi will reach in 10 minutes."
+    },
+    {
+      "id": "D-L07",
+      "set": "dev",
+      "label": "legit",
+      "text": "Reminder: your dentist appointment is tomorrow at 10:30 am."
+    },
+    {
+      "id": "D-L08",
+      "set": "dev",
+      "label": "legit",
+      "text": "Thanks for the payment of Rs 2,000. Your invoice is attached."
+    },
+    {
+      "id": "D-L09",
+      "set": "dev",
+      "label": "legit",
+      "text": "Call me when you reach home. Don't forget to buy milk."
+    },
+    {
+      "id": "D-L10",
+      "set": "dev",
+      "label": "legit",
+      "text": "Your IRCTC ticket PNR 1234567890 is confirmed. Train 12951 departs 16:35. Visit irctc.co.in for details."
+    },
+    {
+      "id": "D-L11",
+      "set": "dev",
+      "label": "legit",
+      "text": "Mr.Sharma confirmed the court hearing for Monday. Our lawyer will update us."
+    },
+    {
+      "id": "D-L12",
+      "set": "dev",
+      "label": "legit",
+      "text": "Your Jio recharge of Rs 299 is successful. Validity 28 days. Visit jio.com for details."
+    },
+    {
+      "id": "D-L13",
+      "set": "dev",
+      "label": "legit",
+      "text": "Never share your OTP with anyone. Bank staff will never ask for your PIN or password."
+    },
+    {
+      "id": "D-L14",
+      "set": "dev",
+      "label": "legit",
+      "text": "Please send me the project files by evening, it is urgent for the client presentation."
+    },
+    {
+      "id": "D-L15",
+      "set": "dev",
+      "label": "legit",
+      "text": "Happy birthday! Wishing you a great year ahead."
+    },
+    {
+      "id": "D-L16",
+      "set": "dev",
+      "label": "legit",
+      "text": "Flight 6E-204 is on time. Boarding at gate 12 at 09:40. Carry a valid photo ID."
+    },
+    {
+      "id": "H-S01",
+      "set": "holdout",
+      "label": "scam",
+      "text": "RBI alert: your account KYC has expired. Your account will be suspended in 24 hours. Click https://kyc-rbi-verify.top/login"
+    },
+    {
+      "id": "H-S02",
+      "set": "holdout",
+      "label": "scam",
+      "text": "Dear sir, a parcel in your name was seized by customs containing illegal items. Contact Inspector Rao on 9812345670 immediately or face arrest."
+    },
+    {
+      "id": "H-S03",
+      "set": "holdout",
+      "label": "scam",
+      "text": "Earn Rs 800 per hour by rating hotels online. Join the Telegram group now. Limited time."
+    },
+    {
+      "id": "H-S04",
+      "set": "holdout",
+      "label": "scam",
+      "text": "Congratulations! You are selected for free recharge. Claim your reward: http://tinyurl.com/free-rch"
+    },
+    {
+      "id": "H-S05",
+      "set": "holdout",
+      "label": "scam",
+      "text": "Bank officer here. We detected fraud on your card. Please tell me the OTP you just received to cancel it."
+    },
+    {
+      "id": "H-S06",
+      "set": "holdout",
+      "label": "scam",
+      "text": "Hello, I am from Amazon support. Your refund of Rs 3,200 is approved. Install AnyDesk app so we can credit it."
+    },
+    {
+      "id": "H-S07",
+      "set": "holdout",
+      "label": "scam",
+      "text": "Your electricity connection will be cut tonight at 9:30 pm as last month bill is not paid. Contact officer 9876501234."
+    },
+    {
+      "id": "H-S08",
+      "set": "holdout",
+      "label": "scam",
+      "text": "Sir your parcel could not be delivered, pay Rs 30 redelivery charge at https://dtdc-redelivery.shop"
+    },
+    {
+      "id": "H-S09",
+      "set": "holdout",
+      "label": "scam",
+      "text": "Invest in our crypto trading group. Guaranteed profit, 100% safe. Insider tip shared daily."
+    },
+    {
+      "id": "H-S10",
+      "set": "holdout",
+      "label": "scam",
+      "text": "Hi Dad, I changed my number. I am in trouble, need money urgently, please transfer Rs 20000 now."
+    },
+    {
+      "id": "H-L01",
+      "set": "holdout",
+      "label": "legit",
+      "text": "Your OTP is 774412. Never share it with anyone. This code expires in 5 minutes."
+    },
+    {
+      "id": "H-L02",
+      "set": "holdout",
+      "label": "legit",
+      "text": "Hi, your SBI credit card statement for Oct is available in the SBI Card app."
+    },
+    {
+      "id": "H-L03",
+      "set": "holdout",
+      "label": "legit",
+      "text": "Can you call me when you are free? I wanted to discuss the weekend plan."
+    },
+    {
+      "id": "H-L04",
+      "set": "holdout",
+      "label": "legit",
+      "text": "Your package from Flipkart is out for delivery today. Track it in the Flipkart app."
+    },
+    {
+      "id": "H-L05",
+      "set": "holdout",
+      "label": "legit",
+      "text": "Reminder: electricity bill due on 25th. Pay via the official BESCOM app."
+    },
+    {
+      "id": "H-L06",
+      "set": "holdout",
+      "label": "legit",
+      "text": "Payment of Rs 500 received from Anita via UPI. Ref 4123456789."
+    },
+    {
+      "id": "H-L07",
+      "set": "holdout",
+      "label": "legit",
+      "text": "Team lunch tomorrow at 1pm. Reply if you have dietary restrictions."
+    },
+    {
+      "id": "H-L08",
+      "set": "holdout",
+      "label": "legit",
+      "text": "Your appointment with Dr. Mehta is confirmed for Monday 11 am. Reply YES to confirm."
+    },
+    {
+      "id": "H2-S01",
+      "set": "holdout2",
+      "label": "scam",
+      "text": "Your PhonePe account is limited. Complete KYC at http://phonepe-kyc-verify.click within 2 hours or lose access."
+    },
+    {
+      "id": "H2-S02",
+      "set": "holdout2",
+      "label": "scam",
+      "text": "Sir, this is Customs. Your courier has 2 passports and illegal cards. Case registered against you. Do not disconnect the call, do not tell your family."
+    },
+    {
+      "id": "H2-S03",
+      "set": "holdout2",
+      "label": "scam",
+      "text": "Work from home! Earn Rs 2000 daily income by completing simple tasks. Message us on WhatsApp 9000011111."
+    },
+    {
+      "id": "H2-S04",
+      "set": "holdout2",
+      "label": "scam",
+      "text": "Aapka electricity bill unpaid hai, aaj raat light cut ho jayegi. Turant call karo 9123400000."
+    },
+    {
+      "id": "H2-L01",
+      "set": "holdout2",
+      "label": "legit",
+      "text": "Your Swiggy order is arriving in 8 minutes. OTP for delivery: 4821. Share it only with the delivery partner."
+    },
+    {
+      "id": "H2-L02",
+      "set": "holdout2",
+      "label": "legit",
+      "text": "Hi, this is Dr. Rao's clinic. Your report is ready. Please collect it between 10 and 5."
+    },
+    {
+      "id": "H2-L03",
+      "set": "holdout2",
+      "label": "legit",
+      "text": "Your Airtel bill of Rs 499 is generated. Pay by 28th via the Airtel Thanks app."
+    },
+    {
+      "id": "H2-L04",
+      "set": "holdout2",
+      "label": "legit",
+      "text": "URGENT: server is down, please check the deployment ASAP."
+    },
+    {
+      "id": "H3-S01",
+      "set": "holdout3",
+      "label": "scam",
+      "text": "Dear customer your SIM will be blocked in 24 hours due to incomplete verification. Call 9810012345 immediately to avoid disconnection."
+    },
+    {
+      "id": "H3-S02",
+      "set": "holdout3",
+      "label": "scam",
+      "text": "Instant loan Rs 50,000 approved! No documents. Download our app loanfast.apk and pay Rs 999 processing fee to release amount."
+    },
+    {
+      "id": "H3-S03",
+      "set": "holdout3",
+      "label": "scam",
+      "text": "Hi dear, I saw your profile. Earn Rs 5000 daily by liking YouTube videos. Message me on Telegram to start, no investment needed."
+    },
+    {
+      "id": "H3-S04",
+      "set": "holdout3",
+      "label": "scam",
+      "text": "Income Tax Dept: a refund of Rs 18,540 is pending. Verify your bank details at http://incometax-refund.info/claim today."
+    },
+    {
+      "id": "H3-S05",
+      "set": "holdout3",
+      "label": "scam",
+      "text": "Mom I lost my phone, this is my new number. Please send Rs 15000 urgently to this account, I will explain later."
+    },
+    {
+      "id": "H3-S06",
+      "set": "holdout3",
+      "label": "scam",
+      "text": "Your Netflix payment failed. Update your card details within 12 hours at http://netflix-billing-help.xyz or account will be suspended."
+    },
+    {
+      "id": "H3-L01",
+      "set": "holdout3",
+      "label": "legit",
+      "text": "Rs 2,450.00 debited from A/c XX4821 on 21-Nov at SWIGGY. Avl bal Rs 31,220. Not you? Call the number on your card."
+    },
+    {
+      "id": "H3-L02",
+      "set": "holdout3",
+      "label": "legit",
+      "text": "Your Zomato order is out for delivery. Rahul will reach you in 10 mins. Track in the app."
+    },
+    {
+      "id": "H3-L03",
+      "set": "holdout3",
+      "label": "legit",
+      "text": "Reminder: your appointment with Dr. Mehta is tomorrow at 11:30 AM. Reply YES to confirm."
+    },
+    {
+      "id": "H3-L04",
+      "set": "holdout3",
+      "label": "legit",
+      "text": "Hey, can you send me the notes from yesterday's class? I'll pay you back for the printouts."
+    },
+    {
+      "id": "H3-L05",
+      "set": "holdout3",
+      "label": "legit",
+      "text": "Salary of Rs 62,000 has been credited to your account XX1190 on 01-Nov. Thank you."
+    },
+    {
+      "id": "H3-L06",
+      "set": "holdout3",
+      "label": "legit",
+      "text": "Your OTP for login is 482910. Valid for 10 minutes. Do not share it with anyone."
+    },
+    {
+      "id": "H4-S01",
+      "set": "holdout4",
+      "label": "scam",
+      "text": "Our earlier group was removed by WhatsApp. Join the new Institutional Trading Club, our analyst Mr. Rao gives 3 sure shots every day. Members made big profits this week, screenshots inside."
+    },
+    {
+      "id": "H4-S02",
+      "set": "holdout4",
+      "label": "scam",
+      "text": "You are allotted IPO shares at a discount. Download our trading platform app, register and deposit Rs 50,000 to confirm your allotment before market opens."
+    },
+    {
+      "id": "H4-S03",
+      "set": "holdout4",
+      "label": "scam",
+      "text": "Sir, please find attached Statement_of_Account_Nov.exe for your approval, from the MD office. Open it on your laptop and revert today."
+    },
+    {
+      "id": "H4-S04",
+      "set": "holdout4",
+      "label": "scam",
+      "text": "You have not repaid your instant loan. We have all your contacts. If you do not pay Rs 8,000 in 2 hours we will send morphed photos of you to every contact."
+    },
+    {
+      "id": "H4-S05",
+      "set": "holdout4",
+      "label": "scam",
+      "text": "Hi! Please vote for my niece in the dance contest. You will get a code on WhatsApp, just enter it on the voting page to confirm your vote."
+    },
+    {
+      "id": "H4-S06",
+      "set": "holdout4",
+      "label": "scam",
+      "text": "Congratulations on completing 3 tasks, commission Rs 450 added. To unlock the next task group you must recharge Rs 3,000 into your merchant account, it will be refunded with extra commission."
+    },
+    {
+      "id": "H4-S07",
+      "set": "holdout4",
+      "label": "scam",
+      "text": "Sorry sir, I sent you Rs 10,000 instead of Rs 1,000 by mistake. Screenshot attached. Please return the extra Rs 9,000 to this UPI id today."
+    },
+    {
+      "id": "H4-S08",
+      "set": "holdout4",
+      "label": "scam",
+      "text": "This is Inspector Verma from the cyber wing. A parcel in your name was found with illegal items. Stay on video until verification, do not inform your family. Transfer Rs 1,50,000 to the RBI safe account, it will be returned."
+    },
+    {
+      "id": "H4-L01",
+      "set": "holdout4",
+      "label": "legit",
+      "text": "Your WhatsApp code is 482-193. Do not share this code with anyone."
+    },
+    {
+      "id": "H4-L02",
+      "set": "holdout4",
+      "label": "legit",
+      "text": "Rs 2,350.00 debited from A/c XX4821 on 21-Nov at 10:42 via UPI to Fresh Mart. If not you, call your bank's helpline or visit your branch."
+    },
+    {
+      "id": "H4-L03",
+      "set": "holdout4",
+      "label": "legit",
+      "text": "Your contract note for trades on 20-Nov is available in your registered email. Log in to your trading app to view your holdings."
+    },
+    {
+      "id": "H4-L04",
+      "set": "holdout4",
+      "label": "legit",
+      "text": "Reminder: your loan EMI of Rs 4,200 is due on 25-Nov. Please keep sufficient balance in your account. Thank you."
+    },
+    {
+      "id": "H4-L05",
+      "set": "holdout4",
+      "label": "legit",
+      "text": "Hey, can you join my cousin's wedding live stream tonight at 8? The link is in the family group."
+    },
+    {
+      "id": "H4-L06",
+      "set": "holdout4",
+      "label": "legit",
+      "text": "Your delivery OTP is 5521. Share it with the delivery partner only when you receive the package."
+    },
+    {
+      "id": "H4-L07",
+      "set": "holdout4",
+      "label": "legit",
+      "text": "Investor reminder: invest only through registered intermediaries and check registration on the official regulator website. Beware of tips from unknown WhatsApp groups."
+    },
+    {
+      "id": "H4-L08",
+      "set": "holdout4",
+      "label": "legit",
+      "text": "Hi team, please find the November expense report attached as Expense_Nov.xlsx. Review by Friday."
+    },
+    {
+      "id": "H5-S01",
+      "set": "holdout5",
+      "label": "scam",
+      "text": "Admin here. The old community got removed so we have moved. Please come to the new group, I will personally share high-accuracy intraday calls every morning."
+    },
+    {
+      "id": "H5-S02",
+      "set": "holdout5",
+      "label": "scam",
+      "text": "Open your free demat account on our app and invest through our institutional channel. Early investors doubled their capital in 20 days."
+    },
+    {
+      "id": "H5-S03",
+      "set": "holdout5",
+      "label": "scam",
+      "text": "Please see the attached RBI_Circular_Nov.pdf.exe and confirm receipt today, this is time sensitive."
+    },
+    {
+      "id": "H5-S04",
+      "set": "holdout5",
+      "label": "scam",
+      "text": "Pay the pending amount now, otherwise your photos will go to everyone in your phonebook."
+    },
+    {
+      "id": "H5-S05",
+      "set": "holdout5",
+      "label": "scam",
+      "text": "Hello, my daughter is in a singing competition. Kindly vote for her on this page and enter the code you receive."
+    },
+    {
+      "id": "H5-S06",
+      "set": "holdout5",
+      "label": "scam",
+      "text": "Your account level is upgraded. Deposit Rs 5,000 to open the VIP orders section and withdraw all your earnings today."
+    },
+    {
+      "id": "H5-L01",
+      "set": "holdout5",
+      "label": "legit",
+      "text": "Admin: our housing society has moved to a new WhatsApp group. Please join using the link on the notice board."
+    },
+    {
+      "id": "H5-L02",
+      "set": "holdout5",
+      "label": "legit",
+      "text": "Sending the Q3 report as Report_Q3.pdf. Please review before Monday's meeting."
+    },
+    {
+      "id": "H5-L03",
+      "set": "holdout5",
+      "label": "legit",
+      "text": "Your demat account statement for October is ready. Log in to the app you installed earlier to download it."
+    },
+    {
+      "id": "H5-L04",
+      "set": "holdout5",
+      "label": "legit",
+      "text": "Vote for the best rangoli at our society festival: reply with the flat number of your favourite. Results at 8 pm."
+    },
+    {
+      "id": "H5-L05",
+      "set": "holdout5",
+      "label": "legit",
+      "text": "Your loan application has been received. A representative from the branch will call you on your registered number. Do not pay anyone to process it."
+    },
+    {
+      "id": "H5-L06",
+      "set": "holdout5",
+      "label": "legit",
+      "text": "Thanks for paying Rs 5,000 for the rent. I have received it and will send the receipt tonight."
+    }
+  ]
+}
